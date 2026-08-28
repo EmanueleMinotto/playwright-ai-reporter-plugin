@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Continuous integration
+- The CI matrix now also runs on `lts/*` and `current` in addition to Node.js 20 and 22, so the
+  active LTS and the latest release are covered without editing the workflow at every Node.js
+  release. `fail-fast` is disabled so a break on `current` does not cancel the other jobs.
+
 ### Documentation
 - README: "Writing like someone who knows the product" — a worked example of `context`, `history`
   and `mcp` used together, with the configuration, the resulting analysis, and how the three inputs
